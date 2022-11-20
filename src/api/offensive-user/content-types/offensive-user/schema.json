@@ -1,0 +1,35 @@
+{
+  "kind": "collectionType",
+  "collectionName": "offensive_users",
+  "info": {
+    "singularName": "offensive-user",
+    "pluralName": "offensive-users",
+    "displayName": "OffensiveUser",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "userName": {
+      "type": "string"
+    },
+    "platform": {
+      "type": "enumeration",
+      "enum": [
+        "facebook",
+        "instagram",
+        "twitter"
+      ]
+    },
+    "userProfile": {
+      "type": "string"
+    },
+    "posts": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::post.post"
+    }
+  }
+}

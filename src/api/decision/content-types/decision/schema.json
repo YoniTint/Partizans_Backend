@@ -1,0 +1,31 @@
+{
+  "kind": "collectionType",
+  "collectionName": "decisions",
+  "info": {
+    "singularName": "decision",
+    "pluralName": "decisions",
+    "displayName": "Decisions",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "postId": {
+      "type": "string"
+    },
+    "volunteerId": {
+      "type": "string"
+    },
+    "machineDecision": {
+      "type": "boolean"
+    },
+    "volunteerDecision": {
+      "type": "boolean"
+    },
+    "reasons": {
+      "type": "boolean"
+    }
+  }
+}

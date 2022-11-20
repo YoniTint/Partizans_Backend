@@ -1,0 +1,48 @@
+{
+  "kind": "collectionType",
+  "collectionName": "posts",
+  "info": {
+    "singularName": "post",
+    "pluralName": "posts",
+    "displayName": "Posts",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "url": {
+      "type": "string"
+    },
+    "platform": {
+      "type": "enumeration",
+      "enum": [
+        "facebook",
+        "instagram",
+        "twitter"
+      ]
+    },
+    "datePosted": {
+      "type": "date"
+    },
+    "foundOffensive": {
+      "type": "boolean"
+    },
+    "postAuthor": {
+      "type": "string"
+    },
+    "postContent": {
+      "type": "text"
+    },
+    "reportsAmount": {
+      "type": "integer"
+    },
+    "isRemoved": {
+      "type": "boolean"
+    },
+    "removalReason": {
+      "type": "string"
+    }
+  }
+}
