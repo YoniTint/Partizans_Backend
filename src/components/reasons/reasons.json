@@ -1,0 +1,14 @@
+{
+  "collectionName": "components_reasons_reasons",
+  "info": {
+    "displayName": "reasons",
+    "icon": "address-card",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "reason": {
+      "type": "text"
+    }
+  }
+}

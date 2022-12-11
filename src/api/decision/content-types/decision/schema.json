@@ -12,20 +12,27 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "postId": {
-      "type": "string"
-    },
-    "volunteerId": {
-      "type": "string"
-    },
     "machineDecision": {
       "type": "boolean"
     },
     "volunteerDecision": {
       "type": "boolean"
     },
+    "post": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::post.post"
+    },
+    "volunteer": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "plugin::users-permissions.user"
+    },
     "reasons": {
-      "type": "boolean"
+      "displayName": "reasons",
+      "type": "component",
+      "repeatable": true,
+      "component": "reasons.reasons"
     }
   }
 }

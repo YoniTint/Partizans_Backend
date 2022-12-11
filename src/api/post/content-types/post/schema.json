@@ -43,6 +43,12 @@
     },
     "removalReason": {
       "type": "string"
+    },
+    "tags": {
+      "displayName": "tags",
+      "type": "component",
+      "repeatable": true,
+      "component": "tags.tags"
     }
   }
 }
